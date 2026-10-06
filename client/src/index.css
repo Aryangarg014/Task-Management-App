@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes pulse-red-alert {
+    0%, 100% {
+      box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+      border-color: #ef4444;
+    }
+    50% {
+      box-shadow: 0 0 15px 5px rgba(239, 68, 68, 0.9);
+      border-color: #f87171;
+    }
+  }
+  .animate-burnout-pulse {
+    animation: pulse-red-alert 1.5s infinite ease-in-out;
+  }
+}
